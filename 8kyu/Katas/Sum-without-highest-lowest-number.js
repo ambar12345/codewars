@@ -10,4 +10,14 @@
 
 
 //My solution
-//jlakjdfldskj
+
+function sumArray(array){
+    if (sumArray == null){
+        return 0
+    }
+let sum= array.sort((a,b) => a-b)//sort lowest to highest t
+                .slice(1,array.length-1)//then slice array to exclude the lowest and highest numbers
+                .reduce((a,b) => a + b, 0)//then sum all numbers, initializing with 0
+    return sum;
+}
+sumArray([ 6, 2, 1, 8, 10])

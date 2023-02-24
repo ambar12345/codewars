@@ -9,10 +9,11 @@
 //str_count("Hello", 'l'); // returns 2
 //str_count("", 'z'); // returns 0
 
-
+//My solution
 function strCount(str, letter){  
-    let count = str.split('').reduce((acc,value) => acc + (value == letter? 1:0),0 )
-    return count;
+    let count = str.split('')//create a variable to hold the sum, split string 
+                   .reduce((acc,value) => acc + (value == letter? 1:0),0 )//use reduce method to sum the occurences of the letter
+    return count;//return sum of occurrences of letter
     }
 
     //other solution 

@@ -15,5 +15,6 @@
 //MY SOLUTION
 
 function chromosomeCheck(sperm) {
-    return sperm == 'XY'? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter."
+    return sperm == 'XY'? "Congratulations! You're going to have a son." //conditional to check string
+                  : "Congratulations! You're going to have a daughter."
   }

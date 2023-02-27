@@ -15,9 +15,10 @@
 //MY SOLUTION
 
 function DNAStrand(dna){
-    let result = dna.split('').map( (letter) => letter == 'A'? 'T' : 
-                                                letter == 'T'? 'A' : 
-                                                letter == 'C'? 'G' : 'C')
-                              .join('')
-    return result;
+    let result = dna.split('')//separate each letter and convert into an array
+                    .map( (letter) => letter == 'A'? 'T' ://use map to go through array and with conditionals
+                                      letter == 'T'? 'A' ://check which letter it is  
+                                      letter == 'C'? 'G' : 'C')//and return its complementary letter
+                    .join('')//join the complementary letters into a string
+    return result;//return the string
       }

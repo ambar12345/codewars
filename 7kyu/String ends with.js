@@ -14,3 +14,9 @@ function solution(str, ending){
     }
       return check == ending//check if strings are equal and return true or false
     }
+
+
+    //much more simple solution
+    function solution(str, ending){
+        return str.endsWith(ending);
+      }

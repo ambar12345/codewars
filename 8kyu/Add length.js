@@ -16,3 +16,7 @@ function addLength(str) {
     return array
     }
     
+
+//created variable arr to hold each word 
+//created variable array to hold each item concatenated with its length
+//return array
